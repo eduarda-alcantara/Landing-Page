@@ -1,0 +1,26 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.main-content {
+     max-width: 120rem;
+     margin: 0 auto;
+     padding: 10rem 3rem;
+ }
+
+ .section {
+    min-height: 100vh;
+}
+
+.main-bg {
+    background-color: #000000;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.white-bg {
+    background-color: #FFFFE0;
+    color: #000000;
+}

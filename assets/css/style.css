@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;  
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h4
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 6rem;
+    margin-bottom: 8rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 3.5rem;
+    padding-bottom: 5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p{
+    font-size: 2rem;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.1rem solid #FFD700;
+    height: 5rem;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem 0 6rem;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.menu h1 a{
+    color: inherit; /*herda a cor do pai*/
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul a {   
+    padding: 1.8rem;
+    position: relative;
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.home-content {
+    position: relative;  
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 5rem;
+    min-height: 100vh;
+}
+
+.home-main-text h1{
+    padding-bottom: 5rem;
+}
+
+.home-main-text,
+.home-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 10rem 5rem;
+}
+
+.home-main-text{
+   background-color: #FFD700;
+    text-align: center;
+    color: #000000;   
+}
+
+.home-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.saiba-mais{
+    max-width: 85rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;    
+}
+
+.saiba-mais p {
+    margin-bottom: 3rem; 
+}
+
+.novidades{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 0 3rem 10rem 3rem;
+}
+
+.novidades-grid {
+    position: relative;
+    gap: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-main{
+    text-align: center;
+    color: #FFD700;
+}
+
+.grid-description-posts {
+ font-size: 1.5rem;
+
+}
+
+.grids{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    transition: all 300ms ease-in-out;
+}
+
+table{
+    width: 100%;
+    min-width: 36rem;
+    border-collapse: collapse;
+}
+
+.table{
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+table td, table th{
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: center;
+    border: 0.1rem solid #000000;
+}
+
+table th, .first-column {
+    background-color: #FFD700;
+}
+
+.null{
+    background-color: white;
+    border: none;
+}
+
+.first-column{
+    font-weight: bold;
+}
+
+.h2-forms{
+    margin: 0%;
+}
+.subscribe {
+    grid-column: span 2;
+} 
+
+.subscribe .forms{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+
+.forms legend{
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group {
+    flex: 1 1 10rem;
+}
+
+.form-group input{
+    border: none;
+    background-color: white;
+    padding: 2rem 2rem;
+    width: 100%;
+    height: 3rem;
+    font-size: 2.3rem;
+}
+
+.form-sexo{
+    display: grid;
+    grid-template-columns: repeat(3, 10fr); 
+    padding-bottom: 10rem;
+    width: 100%;
+}
+
+label{
+    font-size: 2rem;
+}
+
+.form-group input:focus{
+    box-shadow: 0 0 10px 2px gray;
+}
+
+.form-group button {
+    border: 0.5rem solid white;
+    background: none;
+    color: white;
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: white;
+    color: blue;
+}
+
+.form-group ::placeholder {
+    color: gray;
+}
+
+body .full-widht{
+    width: 100%;
+    flex: 1 1 100%
+}
+
+footer{
+ padding: 1.5rem;
+}
+
+.empresa{
+    font-size: 1.6rem;
+    color: #000000;
+}
+
+.endereco{
+    font-size: 1rem;
+}
+
+@media (max-width:800px){
+    .home-content, .grids {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img{
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .gallery-img img{
+        width: 100%;       
+    }
+}
